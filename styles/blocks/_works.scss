@@ -5,6 +5,10 @@
     @include tablet {
       padding: 25px;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__title {

@@ -421,7 +421,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .hero__public-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .hero__public-description {
@@ -891,6 +891,11 @@ h3 {
     padding: 25px;
   }
 }
+@media (max-width: 767px) {
+  .works__inner {
+    display: none;
+  }
+}
 .works__title {
   font-family: "Montserrat SemiBold", sans-serif;
   font-size: 30px;
@@ -1009,7 +1014,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .wedding-hero__public-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .wedding-hero__public-description {
@@ -1457,7 +1462,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .corporate-hero__public-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .corporate-hero__public-description {
@@ -2001,7 +2006,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .contacts__text-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .contacts__text-list {
@@ -2122,7 +2127,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .delivery__text-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .delivery__description {
