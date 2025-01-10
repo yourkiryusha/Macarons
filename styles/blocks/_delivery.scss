@@ -1,0 +1,100 @@
+.delivery {
+  &__inner {
+    padding: 85px 0;
+
+    @include desktop {
+      padding: 75px 0;
+    }
+
+    @include tablet {
+      padding: 65px 0;
+    }
+
+    @include mobile {
+      padding: 45px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    @include mobile {
+      row-gap: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    @include desktop {
+      column-gap: 0;
+      padding: 20px;
+    }
+
+    @include tablet {
+      padding: 10px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &-img {
+      margin-inline: auto;
+
+      @include tablet {
+        width: 495px;
+        height: 250px;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @include mobile {
+      text-align: center;
+      row-gap: 35px;
+    }
+
+    &-title {
+      @include h1-title;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    &-title {
+      font-family: "Montserrat SemiBold", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.small-content {
+  width: 40%;
+}

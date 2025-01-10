@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Доставка и оплата</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Доставка и оплата</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./wedding.html" class="header__link">Свадебные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Собрать набор</a>
+                    </li>
+                    <li class="header__menu-item logo">
+                        <a href="./index.html" class="header__logo">
+                            <img src="./img/logo.svg" alt="Macaron Shop Logo" class="header__logo-img" width="124" height="125">
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Создать дизайн</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./corporate.html" class="header__link">Корпоративные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="delivery">
+            <div class="delivery__inner container">
+                <ul class="delivery__list">
+                    <li class="delivery__item">
+                        <div class="delivery__content">
+                            <img src="./img/delivery/1.png" alt="" class="delivery__content-img" width="695" height="400">
+                        </div>
+                        <div class="delivery__text">
+                            <h1 class="delivery__text-title">
+                                Доставка и оплата
+                            </h1>
+                            <p class="delivery__description">
+                                Курьеры работают ежедневно с 10:00 до 22:00 и обеспечивают доставку по Санкт-Петербургу и его пригородам в радиусе 30 км.
+                            </p>
+                            <div class="delivery__description">
+                                <p class="delivery__description-title">
+                                    Условия доставки:<br>
+                                 </p>
+                                Доставка по городу — от 400 ₽<br>
+                                Бесплатная доставка при заказе от 2000 ₽ (стоимость зависит от района)<br>
+                                Для отдалённых районов цена доставки уточняется с менеджером
+                            </div>
+                            <div class="delivery__description">
+                                <p class="delivery__description-title">
+                                    Интервалы доставки:<br>
+                                </p>
+                                с 10:00 до 14:00<br>
+                                с 14:00 до 17:00<br>
+                                с 17:00 до 22:00
+                            </div>
+                            <p class="delivery__description">
+                                Доставка по Санкт-Петербургу осуществляется в течение 24 часов. Курьер заранее свяжется с вами и предупредит о своём прибытии за 30–40 минут.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="delivery__item">
+                        <div class="delivery__text">
+                            <h2 class="delivery__text-title">
+                                Самовывоз
+                            </h2>
+                            <div class="delivery__description">
+                                <p class="delivery__description-title">
+                                    Санкт-Петербург, Масляный пер., 7Д, БЦ "Ника"<br>
+                                </p>
+                                Режим работы: с 10:00 до 20:00
+                            </div>
+                            <div class="delivery__description">
+                                <p class="delivery__description-title">
+                                    Санкт-Петербург, Coffehouse "МЯТА", наб. канала Грибоедова, 37<br>
+                                </p>
+                                Режим работы: с 15:00 до 21:00
+                            </div>
+                        </div>
+                        <div class="delivery__content small-content">
+                            <img src="./img/delivery/2.png" alt="" class="delivery__content-img" width="322" height="371">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="request">
+            <div class="request__inner">
+                <h2 class="request__title">
+                    Заказать расчёт или отправить запрос<br>на сотрудничество
+                </h2>
+                <form action="" class="request__form">
+                    <ul class="request__form-list">
+                        <li class="request__form-item">
+                            <div class="request__form-col">
+                                <div class="request__col-item">
+                                    <label for="name" class="request__col-label">
+                                        Ваше имя*
+                                    </label>
+                                    <input type="text" class="request__col-input" id="name" required placeholder="Укажите имя">
+                                </div>
+                                <div class="request__col-item">
+                                    <label for="phone" class="request__col-label">
+                                        Телефон*
+                                    </label>
+                                    <input type="text" class="request__col-input" id="phone" required placeholder="Укажите телефон">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="request__form-item">
+                            <div class="request__form-col">
+                                <div class="request__col-item">
+                                    <label for="company" class="request__col-label">
+                                        Название компании*
+                                    </label>
+                                    <input type="text" class="request__col-input" id="company" required placeholder="Укажите компанию">
+                                </div>
+                                <div class="request__col-item">
+                                    <label for="email" class="request__col-label">
+                                        Ваш email*
+                                    </label>
+                                    <input type="text" class="request__col-input" id="email" required placeholder="Укажите email">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="request__form-item">
+                            <label for="message" class="request__form-label">
+                                Добавьте Ваш комментарий
+                            </label>
+                            <textarea name="message" id="message" cols="30" rows="6" class="request__form-textarea"></textarea>
+                        </li>
+                    </ul>
+                    <div class="request__form-button">
+                        <button class="request__form-btn" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                    <p class="request__form-description">
+                        Нажимая на кнопку “Отправить”, я принимаю и соглашаюсь с <a href="#" class="request__form-link">"Договором оферты"</a>
+                        и разрешаю обработку моих персональных данных в соответствии с <a href="#" class="request__form-link">"Политикой конфиденциальности"</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section class="map" id="card">
+            <div class="map__inner">
+                <h2 class="map__title">Район на карте</h2>
+                <div class="map__map">
+                    <div class="card" id="map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__benefits">
+                <ul class="footer__benefits-list">
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/1.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Готовим вручную и с любовью
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/2.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Доставим в день заказа
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/3.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            100% натуральные ингредиенты
+                        </p>
+                    </li>
+                </ul>
+                <p class="footer__benefits-address">
+                    © 2013-2024 Макароншоп<br>
+                    ООО "Квантум", Санкт-Петербург, улица Маршала Тухачевского, 22
+                </p>
+            </div>
+            <div class="footer__info">
+                <h4 class="footer__info-title">
+                    Информация
+                </h4>
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                О компании
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Гарантии вкуса и свежести
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Доставка и оплата
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Контакты
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__catalog">
+                <h4 class="footer__catalog-title">
+                    Каталог
+                </h4>
+                <ul class="footer__catalog-list">
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Каталог десертов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Готовые наборы
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Собрать свой набор
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Акции
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__business">
+                <h4 class="footer__business-title">
+                    Для бизнеса
+                </h4>
+                <ul class="footer__business-list">
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Корпоративные подарки
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Для юридических лиц
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Оптовые подарки
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-info">
+                    <a href="tel+7 (812) 309 82 88" class="footer__contacts-number">+7 (812) 309 82 88</a>
+                    <p class="footer__contacts-time">с 9:00 до 21:00</p>
+                </div>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/1.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/2.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/3.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Доставка и оплата</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./wedding.html" class="mobile-overlay__link">Свадебные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Собрать набор</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Создать дизайн</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./corporate.html" class="mobile-overlay__link">Корпоративные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./contacts.html" class="mobile-overlay__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+</body>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ca425e79-b5fe-41a7-b3fc-6963c94ea8bc&lang=ru_RU"
+        type="text/javascript">
+</script>
+<script>
+    ymaps.ready(init);
+    function init() {
+        const myMap = new ymaps.Map('map', {
+            center: [59.943543, 30.338928],
+            zoom: 16
+        });
+        const myPlacemark = new ymaps.Placemark([59.943543, 30.338928]);
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+</html>

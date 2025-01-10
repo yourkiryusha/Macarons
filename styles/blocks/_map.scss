@@ -1,0 +1,27 @@
+.map {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 85px;
+
+    @include desktop {
+      row-gap: 75px;
+    }
+
+    @include tablet {
+      row-gap: 65px;
+    }
+
+    @include mobile {
+      row-gap: 55px;
+    }
+  }
+
+  &__title {
+    @include h2-title;
+  }
+}
+
+.card {
+  height: 450px;
+}

@@ -1,0 +1,70 @@
+.contacts {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 130px;
+    padding: 85px 0;
+
+    @include desktop {
+      padding: 75px 0;
+    }
+
+    @include tablet {
+      column-gap: 20px;
+      padding: 65px 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      padding: 45px 0;
+    }
+  }
+
+  &__text {
+    &-public {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &-title {
+      @include h1-title;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+
+      &-title {
+        font-family: 'Montserrat SemiBold', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &-description {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__link {
+    color: #E7426A;
+
+    &:hover {
+      color: #f45d82;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}

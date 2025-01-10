@@ -1,0 +1,180 @@
+.footer {
+  background: #EBEDEE;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    padding: 60px 0;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      padding: 50px;
+      row-gap: 25px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      padding: 30px 20px;
+    }
+  }
+
+  &__benefits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    @include desktop {
+      grid-row-start: 2;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 25px;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+
+      @include mobile {
+        flex-direction: row;
+        column-gap: 60px;
+      }
+    }
+
+    &-img {
+      height: 40px;
+      margin-inline: auto;
+
+      @include mobile {
+        margin-inline: 0;
+        width: 90px;
+        height: 80px;
+      }
+    }
+
+    &-description {
+      font-size: 12px;
+      text-align: center;
+      max-width: 120px;
+
+      @include mobile {
+        max-width: 100%;
+        text-align: left;
+        align-self: center;
+      }
+    }
+
+    &-address {
+      font-size: 12px;
+    }
+  }
+
+  &__info,
+  &__catalog,
+  &__business {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    &-title {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &-link {
+      position: relative;
+
+      &:hover {
+        color: #e7426a;
+        transition-duration: 0.3s;
+      }
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      text-align: center;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+
+    @include desktop {
+      grid-column-start: 3;
+    }
+
+    @include mobile {
+      row-gap: 35px;
+    }
+
+    &-info {
+      @include desktop {
+        text-align: center;
+      }
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+      }
+    }
+
+    &-number {
+      text-align: right;
+      font-weight: bold;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &-time {
+      font-size: 14px;
+      text-align: right;
+
+      @include desktop {
+        padding-top: 18px;
+        text-align: center;
+      }
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      column-gap: 18px;
+    }
+  }
+}

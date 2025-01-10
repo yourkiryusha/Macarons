@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Свадебные наборы</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="./delivery.html" class="header__link">Доставка и оплата</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Свадебные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Собрать набор</a>
+                    </li>
+                    <li class="header__menu-item logo">
+                        <a href="./index.html" class="header__logo">
+                            <img src="./img/logo.svg" alt="Macaron Shop Logo" class="header__logo-img" width="124" height="125">
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Создать дизайн</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./corporate.html" class="header__link">Корпоративные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="wedding-hero">
+            <div class="wedding-hero__inner container">
+                <div class="wedding-hero__content">
+                    <img src="./img/banner/wedding-proposal.png" alt="" class="wedding-hero__content-img" width="515" height="584">
+                </div>
+                <div class="wedding-hero__text">
+                    <div class="wedding-hero__public">
+                        <h2 class="wedding-hero__public-title">
+                            Свадебное предложение
+                        </h2>
+                        <p class="wedding-hero__public-description">
+                            Нежные пирожные макаронс с разными вкусами для<br> украшения вашего свадебного торжества
+                        </p>
+                        <ul class="wedding-hero__public-list">
+                            <li class="wedding-hero__public-item">
+                                <p class="wedding-hero__public-item-description">
+                                    100% натурально<br>
+                                    Только миндальная мука, фруктовое пюре, безопасные пищевые красители
+                                </p>
+                            </li>
+                            <li class="wedding-hero__public-item">
+                                <p class="wedding-hero__public-item-description">
+                                    Удобно<br>
+                                    Порционные угощения украсят и дополнят любой стол
+                                </p>
+                            </li>
+                            <li class="wedding-hero__public-item">
+                                <p class="wedding-hero__public-item-description">
+                                    Быстро<br>
+                                    Изготовим за 3 дня, доставим на мероприятие, собираем и сервируем стол
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="wedding-hero__public-btn" type="button">
+                            Презентация
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sets">
+            <div class="sets__inner container">
+                <h2 class="sets__title">
+                    Наборы для свадьбы
+                </h2>
+                <ul class="sets__list">
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/1.jpg" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Набор из 9 макарон
+                            </h3>
+                            <p class="sets__item-description">
+                                9 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                600 руб
+                            </p>
+                            <button class="sets__item-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/2.jpg" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Для гостей
+                            </h3>
+                            <p class="sets__item-description">
+                                2 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                200 руб
+                            </p>
+                            <button class="sets__item-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/3.jpg" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Свадебный набор
+                            </h3>
+                            <p class="sets__item-description">
+                                9 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                1000 руб
+                            </p>
+                            <button class="sets__item-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/4.png" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Набор “Изумрудный”
+                            </h3>
+                            <p class="sets__item-description">
+                                60 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                6600 руб
+                            </p>
+                            <button class="sets__item-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/5.jpg" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Гостевой набор
+                            </h3>
+                            <p class="sets__item-description">
+                                4 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                80 руб
+                            </p>
+                            <button class="sets__item-btn">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sets__item">
+                        <div class="sets__item-content">
+                            <img src="./img/sets/6.jpg" alt="" class="sets__item-img" width="370" height="300">
+                        </div>
+                        <div class="sets__item-text">
+                            <h3 class="sets__item-title">
+                                Набор для девичника
+                            </h3>
+                            <p class="sets__item-description">
+                                30 макаронс в коробке
+                            </p>
+                        </div>
+                        <div class="sets__item-footer">
+                            <p class="sets__item-price">
+                                600 руб
+                            </p>
+                            <button class="sets__item-btn" type="button">
+                                В корзину
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="idea">
+            <div class="idea__inner container">
+                <div class="idea__content">
+                    <h2 class="idea__title">
+                        Мы открыты для новых идей
+                    </h2>
+                    <p class="idea__description">
+                        Каждое событие уникально и мы готовы предложить индивидуальные решения для Вашего мероптиятия
+                    </p>
+                    <form action="" class="idea__form">
+                        <ul class="idea__form-list">
+                            <li class="idea__form-item">
+                                <div class="idea__form-row">
+                                    <div class="idea__form-row-item">
+                                        <label for="name" class="idea__form-label">
+                                            Ваше имя*
+                                        </label>
+                                        <input type="text" class="idea__form-input" id="name" required placeholder="Укажите имя">
+                                    </div>
+                                    <div class="idea__form-row-item">
+                                        <label for="phone" class="idea__form-label">
+                                            Телефон*
+                                        </label>
+                                        <input type="text" class="idea__form-input" id="phone" required placeholder="+7 (___) ___-__-__">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="idea__form-item">
+                                <label for="message" class="idea__form-label">
+                                    Опишите Вашу идею
+                                </label>
+                                <textarea name="message" id="message" cols="30" rows="3" class="idea__form-textarea"></textarea>
+                            </li>
+                        </ul>
+                        <div class="idea__form-button">
+                            <button class="idea__form-btn" type="submit">
+                                Отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                    <p class="idea__footer">
+                        Нажимая на кнопку "Отправить заявку", я принимаю и соглашаюсь с <a href="#" class="idea__footer-link">"Договором оферты"</a> и разрешаю<br>
+                        обработку моих персональных данных в соответствии с <a href="#" class="idea__footer-link">"Политикой конфиденциальности"</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__benefits">
+                <ul class="footer__benefits-list">
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/1.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Готовим вручную и с любовью
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/2.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Доставим в день заказа
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/3.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            100% натуральные ингредиенты
+                        </p>
+                    </li>
+                </ul>
+                <p class="footer__benefits-address">
+                    © 2013-2024 Макароншоп<br>
+                    ООО "Квантум", Санкт-Петербург, улица Маршала Тухачевского, 22
+                </p>
+            </div>
+            <div class="footer__info">
+                <h4 class="footer__info-title">
+                    Информация
+                </h4>
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                О компании
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Гарантии вкуса и свежести
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Доставка и оплата
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Контакты
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__catalog">
+                <h4 class="footer__catalog-title">
+                    Каталог
+                </h4>
+                <ul class="footer__catalog-list">
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Каталог десертов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Готовые наборы
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Собрать свой набор
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Акции
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__business">
+                <h4 class="footer__business-title">
+                    Для бизнеса
+                </h4>
+                <ul class="footer__business-list">
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Корпоративные подарки
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Для юридических лиц
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Оптовые подарки
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-info">
+                    <a href="tel+7 (812) 309 82 88" class="footer__contacts-number">+7 (812) 309 82 88</a>
+                    <p class="footer__contacts-time">с 9:00 до 21:00</p>
+                </div>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/1.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/2.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/3.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="./delivery.html" class="mobile-overlay__link">Доставка и оплата</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Свадебные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Собрать набор</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Создать дизайн</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./corporate.html" class="mobile-overlay__link">Корпоративные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./contacts.html" class="mobile-overlay__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+</body>
+</html>

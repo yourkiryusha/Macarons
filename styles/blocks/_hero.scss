@@ -1,0 +1,117 @@
+.hero {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 110px;
+
+    @include desktop {
+      padding-inline: 20px;
+      column-gap: 50px;
+    }
+
+    @include tablet {
+      column-gap: 25px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    opacity: 0;
+    transform: translateY(150px);
+    animation: heroIn 0.75s ease forwards;
+
+    @include mobile {
+      row-gap: 15px;
+    }
+  }
+
+  &__name {
+    font-family: 'Montserrat SemiBold', sans-serif;
+    text-align: center;
+    animation-delay: 0.5s;
+
+    &-title {
+      font-size: 22px;
+
+      @include desktop {
+        font-size: 20px;
+      }
+    }
+
+    &-description {
+      position: relative;
+      font-size: 16px;
+      font-weight: bold;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: var(--color-dark);
+        height: 2px;
+        width: 29px;
+        top: 45%;
+        left: 35%;
+
+        @include tablet {
+          height: 0;
+          width: 0;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: var(--color-dark);
+        height: 2px;
+        width: 29px;
+        top: 45%;
+        right: 35%;
+
+        @include tablet {
+          height: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+
+  &__public {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    text-align: center;
+    animation-delay: 1s;
+
+    &-title {
+      @include h1-title;
+    }
+
+    &-description {
+      font-family: 'ProximaNova Regular', sans-serif;
+      font-size: 18px;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

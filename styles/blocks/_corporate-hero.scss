@@ -1,0 +1,102 @@
+.corporate-hero {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 50px 0;
+
+    @include tablet {
+      padding: 20px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 40%;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    &-img {
+      margin-inline: auto;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
+
+  &__public {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    opacity: 0;
+    transform: translateY(150px);
+    animation: heroIn 0.75s ease forwards;
+
+    &-title {
+      @include h1-title;
+      text-align: center;
+      animation-delay: 0.25s;
+    }
+
+    &-description {
+      font-family: 'ProximaNova Regular', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 15px;
+      animation-delay: 0.5s;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      padding: 15px 0;
+      animation-delay: 0.75s;
+
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    &-item {
+      font-size: 16px;
+    }
+
+    &-btn {
+      width: 230px;
+      height: 48px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #fff;
+      background-color: #e7426a;
+      font-family: 'Montserrat SemiBold', sans-serif;
+      font-size: 14px;
+      border: 1px solid #e7426a;
+      margin-inline: auto;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 15px 0;
+      animation-delay: 1s;
+
+      &:hover {
+        background-color: #f45d82;
+        border-color: #f45d82;
+        transition-duration: var(--transition-duration);
+      }
+    }
+  }
+}

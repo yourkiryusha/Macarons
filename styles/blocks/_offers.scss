@@ -1,0 +1,53 @@
+.offers {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 35px;
+
+    @include tablet {
+      row-gap: 30px;
+    }
+  }
+
+  &__title {
+    @include h2-title;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 200px;
+
+    @include desktop {
+      column-gap: 125px;
+    }
+
+    @include tablet {
+      column-gap: 50px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    &-img {
+      margin-inline: auto;
+    }
+
+    &-description {
+      font-family: 'Montserrat SemiBold', sans-serif;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

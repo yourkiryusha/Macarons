@@ -1,0 +1,56 @@
+@mixin fluid-text ($max: 48, $min: 16) {
+  font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: #B3D9F3;
+  border: none;
+}
+
+@mixin square($size) {
+  width: $size;
+  aspect-ratio: 1;
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@mixin h1-title {
+  font-family: 'Montserrat SemiBold', sans-serif;
+  font-size: 42px;
+
+  @include desktop {
+    font-size: 38px;
+  }
+
+  @include tablet {
+    font-size: 34px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+@mixin h2-title {
+  font-family: 'Montserrat SemiBold', sans-serif;
+  font-size: 30px;
+  text-align: center;
+
+  @include desktop {
+    font-size: 26px;
+  }
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+.benefits {
+  &__inner {
+    padding: 50px 0;
+
+    @include desktop {
+      padding: 50px 25px;
+    }
+
+    @include mobile {
+      padding: 25px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 25px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      background: var(--card-color);
+      padding: 35px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1s ease forwards;
+
+      @include desktop {
+        padding: 15px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--card-color);
+        top: -5px;
+        left: 0;
+        transform: skewY(var(--card-skew-angel));
+        transform-origin: var(--card-transform-origin);
+        z-index: 1;
+        filter: brightness(1.1);
+
+        @include desktop {
+          width: 0;
+        }
+      }
+    }
+    &-item:nth-child(2) {
+      --card-color: #FFC2CC;
+      --card-skew-angel: 25deg;
+      --card-transform-origin: bottom right;
+      animation-delay: 0.2s;
+    }
+
+    &-item:nth-child(3) {
+      --card-color: #B4EAB3;
+      --card-skew-angel: 25deg;
+      --card-transform-origin: bottom left;
+      animation-delay: 0.4s;
+      &::before {
+        top: 5px;
+      }
+    }
+
+    &-item:nth-child(4) {
+      --card-color: #FDD5CD;
+      --card-skew-angel: -25deg;
+      --card-transform-origin: bottom right;
+      animation-delay: 0.6s;
+      &::before {
+        top: 5px;
+      }
+    }
+
+    &-item:nth-child(5) {
+      --card-color: #A8DCDF;
+      --card-skew-angel: -25deg;
+      --card-transform-origin: top left;
+      animation-delay: 0.8s;
+    }
+
+    &-item:nth-child(6) {
+      --card-color: #C4C6EC;
+      --card-skew-angel: 25deg;
+      --card-transform-origin: top right;
+      animation-delay: 1s;
+    }
+  }
+
+  &__link {
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,36 @@
+.clients {
+  padding-bottom: 85px;
+
+  @include desktop {
+    padding-bottom: 75px;
+  }
+
+  @include tablet {
+    padding-bottom: 65px;
+  }
+
+  @include mobile {
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    @include h2-title;
+    padding-bottom: 40px;
+
+    @include desktop {
+      padding-bottom: 30px;
+    }
+
+    @include tablet {
+      padding-bottom: 20px;
+    }
+
+    @include mobile {
+      padding-bottom: 10px;
+    }
+  }
+
+  .swiper-pagination__clients {
+    top: 80%;
+  }
+}

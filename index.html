@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Macaron Shop</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="./delivery.html" class="header__link">Доставка и оплата</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./wedding.html" class="header__link">Свадебные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Собрать набор</a>
+                    </li>
+                    <li class="header__menu-item logo">
+                        <a href="#" class="header__logo">
+                            <img src="./img/logo.svg" alt="Macaron Shop Logo" class="header__logo-img" width="124" height="125">
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__link">Создать дизайн</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./corporate.html" class="header__link">Корпоративные наборы</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <img src="./img/banner/banner.jpg" alt="" class="hero__content-img" width="443" height="443">
+                </div>
+                <div class="hero__header">
+                    <div class="hero__name">
+                        <h1 class="hero__name-title">
+                            Macaronshop
+                        </h1>
+                        <p class="hero__name-description">
+                            since 2013
+                        </p>
+                    </div>
+                    <div class="hero__public">
+                        <h2 class="hero__public-title">
+                            Настоящая любовь
+                        </h2>
+                        <p class="hero__public-description">
+                            Пирожные макарон и другие десерты<br> из натуральных ингредиентов, приготовленные с любовью
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="benefits__inner container">
+                <ul class="benefits__list">
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/1.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Готовые наборы
+                        </h3>
+                        <p class="benefits__description">
+                            Готовые наборы со скидкой.<br>
+                            Вы можете подобрать набор на подходящий случай.
+                        </p>
+                    </li>
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/2.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Собрать свой набор
+                        </h3>
+                        <p class="benefits__description">
+                            Выбрать количество макарун, и выбрать вкусы
+                        </p>
+                    </li>
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/3.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Набор с индивидуальной печатью
+                        </h3>
+                        <p class="benefits__description">
+                            Собрать набор макарон с уникальным дизайном.
+                        </p>
+                    </li>
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/4.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Свадебные предложения
+                        </h3>
+                        <p class="benefits__description">
+                            Нежные пирожные макаронс с разными вкусами для<br>
+                            украшения вашего свадебного торжества
+                        </p>
+                    </li>
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/5.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Корпоративные подарки
+                        </h3>
+                        <p class="benefits__description">
+                            От 85 руб за шт. С уникальным дизайном.<br>
+                            Приятный комплимент для коллег и партнеров
+                        </p>
+                    </li>
+                    <li class="benefits__list-item">
+                        <a href="#" class="benefits__link">
+                            <img src="./img/benefits/6.svg" alt="" class="benefits__link-logo">
+                        </a>
+                        <h3 class="benefits__title">
+                            Оптовые поставки
+                        </h3>
+                        <p class="benefits__description">
+                            Предложение для кофеен, кафе, отелей и т.д.<br>
+                            Посмотрите условия сотрудничества и отзывы.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="care">
+            <div class="care__inner container">
+                <h2 class="care__title">
+                    Мы обо всём позаботились
+                </h2>
+                <ul class="care__list">
+                    <li class="care__list-item">
+                        <div class="care__list-img">
+                            <img src="./img/care/1.jpg" alt="" class="care__img" width="270" height="270">
+                        </div>
+                        <div class="care__info">
+                            <h3 class="care__info-title">
+                                Лучшие ингредиенты
+                            </h3>
+                            <p class="care__info-description">
+                                Мы используем только свежие и высококачественные ингредиенты для каждого макарона.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="care__list-item">
+                        <div class="care__list-img">
+                            <img src="./img/care/2.jpg" alt="" class="care__img" width="270" height="270">
+                        </div>
+                        <div class="care__info">
+                            <h3 class="care__info-title">
+                                Упаковка
+                            </h3>
+                            <p class="care__info-description">
+                                Мы заботимся о каждой детале, упаковка надежно сохраняет свежесть и красоту наших десертов.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="care__list-item">
+                        <div class="care__list-img">
+                            <img src="./img/care/3.jpg" alt="" class="care__img" width="270" height="270">
+                        </div>
+                        <div class="care__info">
+                            <h3 class="care__info-title">
+                                Получение в день заказа
+                            </h3>
+                            <p class="care__info-description">
+                                Наслаждайтесь свежими макаронами прямо в день заказа — быстро и удобно.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="care__list-item">
+                        <div class="care__list-img">
+                            <img src="./img/care/4.jpg" alt="" class="care__img" width="270" height="270">
+                        </div>
+                        <div class="care__info">
+                            <h3 class="care__info-title">
+                                Анонимная доставка
+                            </h3>
+                            <p class="care__info-description">
+                                Мы гарантируем полную анонимность доставки, чтобы вы могли наслаждаться без лишних вопросов.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="works">
+            <div class="works__inner">
+                <h2 class="works__title">
+                    Галерея
+                </h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/1.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/2.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/3.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/4.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/5.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/swiper/6.jpg" class="swiper__img" alt="" width="1170" height="475">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__benefits">
+                <ul class="footer__benefits-list">
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/1.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Готовим вручную и с любовью
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/2.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            Доставим в день заказа
+                        </p>
+                    </li>
+                    <li class="footer__benefits-item">
+                        <img src="./img/footer/3.svg" alt="" class="footer__benefits-img" width="45" height="39">
+                        <p class="footer__benefits-description">
+                            100% натуральные ингредиенты
+                        </p>
+                    </li>
+                </ul>
+                <p class="footer__benefits-address">
+                    © 2013-2024 Макароншоп<br>
+                    ООО "Квантум", Санкт-Петербург, улица Маршала Тухачевского, 22
+                </p>
+            </div>
+            <div class="footer__info">
+                <h4 class="footer__info-title">
+                    Информация
+                </h4>
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                О компании
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Гарантии вкуса и свежести
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Доставка и оплата
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="#" class="footer__info-link">
+                            <p class="footer__info-description">
+                                Контакты
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__catalog">
+                <h4 class="footer__catalog-title">
+                    Каталог
+                </h4>
+                <ul class="footer__catalog-list">
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Каталог десертов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Готовые наборы
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Собрать свой набор
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#" class="footer__catalog-link">
+                            <p class="footer__catalog-description">
+                                Акции
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__business">
+                <h4 class="footer__business-title">
+                    Для бизнеса
+                </h4>
+                <ul class="footer__business-list">
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Корпоративные подарки
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Для юридических лиц
+                            </p>
+                        </a>
+                    </li>
+                    <li class="footer__business-item">
+                        <a href="#" class="footer__business-link">
+                            <p class="footer__business-description">
+                                Оптовые подарки
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-info">
+                    <a href="tel+7 (812) 309 82 88" class="footer__contacts-number">+7 (812) 309 82 88</a>
+                    <p class="footer__contacts-time">с 9:00 до 21:00</p>
+                </div>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/1.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/2.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="#" class="footer__contacts-link">
+                            <img src="./img/footer/logo/3.svg" alt="" class="footer__contacts-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="./delivery.html" class="mobile-overlay__link">Доставка и оплата</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./wedding.html" class="mobile-overlay__link">Свадебные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Собрать набор</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">Создать дизайн</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./corporate.html" class="mobile-overlay__link">Корпоративные наборы</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="./contacts.html" class="mobile-overlay__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</html>
